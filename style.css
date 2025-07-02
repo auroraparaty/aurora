@@ -110,7 +110,7 @@ footer {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(230, 221, 216, 0.9); /* fundo claro e translúcido */
+  background-color: rgba(207, 199, 195, 0.9); /* fundo claro e translúcido */
   backdrop-filter: blur(6px); /* suaviza o fundo atrás do menu */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   z-index: 1000;
