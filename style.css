@@ -105,14 +105,16 @@ footer {
   color: #6f5e5e;
 }
 
-/* Menu fixo */
+/* Menu fixo com fundo claro translúcido e tons suaves */
 .top-nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: rgba(255, 245, 240, 0.9); /* fundo claro e translúcido */
+  backdrop-filter: blur(6px); /* suaviza o fundo atrás do menu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   z-index: 1000;
+  padding: 10px 0;
 }
 
 .top-nav nav ul {
@@ -120,24 +122,26 @@ footer {
   justify-content: center;
   list-style: none;
   margin: 0;
-  padding: 10px 0;
-  gap: 30px;
+  padding: 0;
+  gap: 40px;
 }
 
 .top-nav nav ul li a {
   text-decoration: none;
-  color: #914e48;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  color: #914e48; /* tom do tema */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .top-nav nav ul li a:hover {
-  background-color: #f5e4df;
+  background-color: rgba(145, 78, 72, 0.1);
+  color: #6a342f;
 }
 
 /* Espaço para compensar o menu fixo */
 body {
-  padding-top: 60px;
+  padding-top: 70px;
 }
