@@ -104,3 +104,40 @@ footer {
   font-size: 0.9em;
   color: #6f5e5e;
 }
+
+/* Menu fixo */
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.top-nav nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  gap: 30px;
+}
+
+.top-nav nav ul li a {
+  text-decoration: none;
+  color: #914e48;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.top-nav nav ul li a:hover {
+  background-color: #f5e4df;
+}
+
+/* Espaço para compensar o menu fixo */
+body {
+  padding-top: 60px;
+}
