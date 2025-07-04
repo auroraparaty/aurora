@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ajude a Aurora 🐱</title>
+    <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
   
@@ -36,12 +38,14 @@
   <p>Recentemente, ela precisou retirar dois tumores. Mesmo que Aurora já seja uma gatinha que precisa de cuidados renais, ela vinha respondendo bem no início do pós-operatório. Porém, após sete dias, apresentou um quadro de inflamação pulmonar e dor articular, agravado pelo frio intenso das últimas semanas. Ela está com dificuldade respiratória, e o tratamento, naturalmente, sobrecarrega ainda mais os rins.</p>
   <p>Meu companheiro e eu seguimos fazendo tudo o que está ao nosso alcance para ajudá-la, porque ela não demonstra em nenhum momento vontade de desistir. Pelo contrário — está se ajudando ao máximo, sendo uma mestra em resiliência pra nós!</p>
   <p>Essa não é a primeira vez que Aurora passa por uma cirurgia. Há alguns anos, ela retirou um pequeno tumor e teve uma ótima recuperação, vivendo muitos anos com qualidade. Ela também superou o luto de perder a mãe e a irmãzinha — companheiras inseparáveis, que nunca haviam tido problemas de saúde tão cedo como ela teve. Elas viraram estrelinhas há pouco mais de um ano... e, para nossa surpresa, Aurora continua aqui, firme, nos ensinando também que a vida é mesmo um mistério.</p>
-  <a href="https://www.instagram.com/p/B0EjhTcjtSL/?igsh=cnUycGhoM2d4NzBm" target="_blank" rel="noopener noreferrer">
+<!--  <a href="https://www.instagram.com/p/B0EjhTcjtSL/?igsh=cnUycGhoM2d4NzBm" target="_blank" rel="noopener noreferrer">
   <video autoplay muted loop playsinline class="aurora-video">
     <source src="aurora-loop.mp4" type="video/mp4">
     Seu navegador não suporta vídeo em HTML5.
   </video>
-  </a>
+  </a> -->
+        <!-- Carrossel da Aurora -->
+<div id="carrossel-aurora"></div>
   <p>Agora, porém, ela enfrenta esse novo desafio em uma fase ainda mais sensível da vida.</p>
   <p>Por isso, quem puder nos ajudar com qualquer quantia, ficamos profundamente agradecidos. Acreditamos que a união realmente faz a força. 🙏🏻🐱</p>
   <p>Os gastos com os exames e cuidados pré-operatórios, com a cirurgia e agora com os tratamentos do pós estão sendo elevados. Um processo de mais de três meses pra nós. Para superar esse quadro agora, Aurora está fazendo soroterapia diária, que ainda será necessária por um tempo.</p>
@@ -90,5 +94,18 @@
       alert("Copiado para a área de transferência!");
     }
   </script>
+  
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Script personalizado para carregar carrosséis -->
+<script src="js/carrossel.js"></script>
+
+<!-- Chamar os carrosséis desejados -->
+<script>
+  carregarCarrossel("carrossel-aurora", "carrosseis/carrossel-1.html");
+  carregarCarrossel("carrossel-recuperacao", "carrosseis/carrossel-2.html");
+</script>
+</body>
 </body>
 </html>
